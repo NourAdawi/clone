@@ -1,14 +1,22 @@
-const fs = require("fs");
-const  path = require("path");
-
-const connection = require("./connection");
-
-const sql = fs.readFileSync(path.join(__dirname, "build.sql")).toString();
-
-connection
-  .query(sql)
-  .then(() => console.log("build created successfully!"))
-  .catch(e => console.error('failed to build', e.stack));
-
-
-
+  const {Pool} = require('pg');
+  require('env2')('./config.env');
+  
+  
+  if(!process.env.DB_URL) 
+      console.log('No Databse URL!!!');
+  
+  const params = new URL(process.env.DB_URL);
+  
+  const options = {
+      host: params.hostname,
+      port: params.port,
+      database: params.pathname.split('/')[1],
+      max: process.env.DB_MAX_CONNECTIONS || 2,
+      user: params.username,
+      password: params.password,
+      ssl: params.hostname !== 'localhost'
+  };
+  
+      
+  module.exports = new Pool(options);
+  
