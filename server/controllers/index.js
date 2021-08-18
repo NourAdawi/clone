@@ -8,7 +8,7 @@ const router = express.Router();
 router.get('/', (req, res) => {
 
     let userName = req.body.userName;
-    getDataPosts(userName)
+    getDataPosts('EmanWamda')
     .then(resp => res.json(resp.rows))
     .catch(err => console.log(err));
 });
