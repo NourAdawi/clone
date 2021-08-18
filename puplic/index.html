@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Twitter</title>
+   
+  </head>
+  <body>
+  
+
+    <!-- feeds page -->
+    <section class="feeds-page">
+      <!-- feeds nav -->
+      <nav class="feeds-nav">
+        <div class="icons">
+          <a href="#" class="active"><i class="fas fa-home"></i></a>
+          <a href="#"><i class="fas fa-hashtag"></i></a>
+          <a href="#"><i class="far fa-bell"></i></a>
+          <a href="#"><i class="far fa-envelope"></i></a>
+        </div>
+        <div class="search-bar">
+          <i class="fas fa-search"></i>
+          <input
+            type="text"
+            placeholder="Search Twirrer"
+            class="search-bar-input"
+          />
+        </div>
+        <div class="user">
+          <div class="user-img-wrapper">
+            <img src="images/12.jpg" />
+          </div>
+          <a href="#" class="user-link">Nour Adawi</a>
+          <i class="fas fa-chevron-down"></i>
+          <span>@nourdaza</span>
+          
+          
+        </div>
+      </nav>
+      <!-- end of feeds nav -->
+
+      <!-- feeds content -->
+      <div class="feeds-content">
+        <div class="feeds-header">
+          <div class="header-top">
+            <h4>Home</h4>
+            <i class="far fa-star"></i>
+          </div>
+          <div class="header-post">
+            <div class="header-img-wrapper">
+              <img src="images/12.jpg" />
+                
+            </div>
+            <input id='text_field' type="text" placeholder="What's happening?" />
+          
+            <i class="far fa-image"></i>
+            <i class="far fa-chart-bar"></i>
+            <i class="far fa-smile"></i>
+            <i class="far fa-calendar-alt" ></i>
+
+            <button type="button" class="tweet-btn">
+               Tweet
+            </button>
+
+          </div>
+        </div>
+
+
+           <div class='posts'>
+
+            <!-- <div  class='post'>
+
+          </div> -->
+
+          <div  class='post'>
+            <div class="user-avatar">
+              <img src="images/user1.jpg" />
+            </div>
+            
+            <div  class="post-content">
+              <div class="post-user-info">
+                <h4>Amr Monzir </h4>
+                <span>@AmrMonzir . 10m</span>
+              </div>
+              <p class="post-text">
+                Flutter web is stable... Oh boy oh boy
+              </p>
+              <div class="post-img">
+   <a href="images/post-img-1.jpg" target="_blank"> <img src="images/post-img-1.jpg" /></a>  
+              </div>
+              <div class="post-icons">
+                <i  class="far fa-comment comment"></i>
+                <i  class="fas fa-retweet retweet"></i>
+                <i class="far fa-heart like" ></i>
+                <i class="fas fa-external-link-alt link"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class='post'>
+            <div class="user-avatar">
+              <img src="images/user7.jpg" />
+            </div>
+
+            <div class="post-content">
+              <div class="post-user-info">
+                <h4>Lex Fridman </h4>
+                <span>@lexfridman . 20m</span>
+              </div>
+              <p class="post-text">
+                Can you?
+              </p>
+              <div class="post-img">
+                <img src="images/post-img-3.jpg" />
+              </div>
+              <div class="post-icons">
+                <i  class="far fa-comment comment" ></i>
+                <i  class="fas fa-retweet retweet"></i>
+                <i  class="far fa-heart like"></i>
+                <i class="fas fa-external-link-alt link"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class='post'>
+            <div class="user-avatar">
+              <img src="images/user2.jpg" />
+            </div>
+
+            <div class="post-content">
+              <div class="post-user-info">
+                <h4>Nisreen Maher </h4>
+                <span>@NisreenMaher97 . 35m</span>
+              </div>
+              <p class="post-text">
+                قل لي انت مع مين باتاك اون تايتن اقلك من انت
+              </p>
+              <div class="post-img">
+                <img src="images/post-img-2.jpg" />
+              </div>
+              <div class="post-icons">
+                <i  class="far fa-comment comment" ></i>
+                <i  class="fas fa-retweet retweet"></i>
+                <i  class="far fa-heart like"></i>
+                <i class="fas fa-external-link-alt link"></i>
+              </div>
+            </div>
+          </div>
+
+
+          <div class='post'>
+            <div class="user-avatar">
+              <img src="images/user3.jpg" />
+            </div>
+
+            <div class="post-content">
+              <div class="post-user-info">
+                <h4>Abeer Abuzayed   </h4>
+                <span>@aabuzayed1 . 1h</span>
+              </div>
+              <p class="post-text">
+                "When you throw away code and start from scratch, you are throwing away all that knowledge. All those collected bug fixes. Years of programming work."
+              </p>
+            
+              <div class="post-icons">
+                <i  class="far fa-comment comment" ></i>
+                <i  class="fas fa-retweet retweet"></i>
+                <i  class="far fa-heart like"></i>
+                <i class="fas fa-external-link-alt link"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class='post'>
+            <div class="user-avatar">
+              <img src="images/user6.jpg" />
+            </div>
+
+            <div class="post-content">
+              <div class="post-user-info">
+                <h4>elvis </h4>
+                <span>@omarsar0 . 3h</span>
+              </div>
+              
+              <div class="post-img">
+                <img src="images/post-img-4.jpg" />
+              </div>
+              <div class="post-icons">
+                <i  class="far fa-comment comment" ></i>
+                <i  class="fas fa-retweet retweet"></i>
+                <i  class="far fa-heart like"></i>
+                <i class="fas fa-external-link-alt link"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="follow">
+          <h3 class="follow-heading">Who to follow</h3>
+          <div class="follow-user">
+            <div class="follow-user-img">
+              <img src="images/user5.jpg" />
+            </div>
+            <div class="follow-user-info">
+              <h4>9GAG</h4>
+              <p>@9GAG</p>
+            </div>
+            <button type="button" class="follow-btn">Follow</button>
+          </div>
+          <div class="follow-user">
+            <div class="follow-user-img">
+              <img src="images/user8.jpg" />
+            </div>
+            <div class="follow-user-info">
+              <h4>Reddit</h4>
+              <p>@reddit</p>
+            </div>
+            <button type="button" class="follow-btn">Follow</button>
+          </div>
+          <div class="follow-user">
+            <div class="follow-user-img">
+              <img src="images/user9.jpg" />
+            </div>
+            <div class="follow-user-info">
+              <h4>Papers with Code
+              </h4>
+              <p>@paperswithcode</p>
+            </div>
+            <button type="button" class="follow-btn">Follow</button>
+          </div>
+          <div class="follow-link">
+            <a href="#">Show more</a>
+          </div>
+
+          <div>
+            <footer class="follow-footer">
+              <ul>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Privacy policy</a></li>
+                <li><a href="#">Cookies</a></li>
+                <li><a href="#">Ads info</a></li>
+                <li><a href="#">More</a></li>
+                <li>
+                  <p>© 2021 Twitter, Inc.</p></li>
+              </ul>
+            </footer>
+
+          </div>
+        </div>
+
+        
+      
+
+\
+
+
+      </div>
+      <!-- end of feeds content -->
+    </section>
+    
+    <!-- end of feeds page -->
+
+    <script src="script.js"></script>
+    
+  </body>
+</html>
